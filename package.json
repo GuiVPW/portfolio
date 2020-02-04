@@ -1,0 +1,15 @@
+{
+  "name": "vierra",
+  "version": "1.0.0",
+  "description": "Um portfolio de Guilherme Vieira",
+  "main": "server.js",
+  "repository": "https://github.com/Xubilauu/portfolio.git",
+  "author": "Guilherme Vieira de Paiva",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2"
+  }
+}
