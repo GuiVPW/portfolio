@@ -10,6 +10,12 @@
     "express": "^4.17.1",
     "git": "^0.1.5",
     "nodemailer": "^6.4.2",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "now": "^17.0.1"
+  },
+  {
+    "scripts": {
+      "build": "server.js build --output public"
+    }
   }
 }
