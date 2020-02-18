@@ -13,9 +13,7 @@
     "nodemon": "^2.0.2",
     "now": "^17.0.1"
   },
-  {
-    "scripts": {
-      "build": "server.js build --output public"
-    }
+  "scripts": {
+    "build": "nodemon server.js"
   }
 }
