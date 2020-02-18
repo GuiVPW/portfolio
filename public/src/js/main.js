@@ -303,7 +303,7 @@ Javascript Function for Format, Validate and Submit the Contact Form
     + "\r\n\r\nMinha mensagem é a seguinte: " 
     + $("#form-contact-message").val());
     console.log(name, subject, text);
-          $.get("http://vierra-com.umbler.net/send", {subject:subject, text:text}, function(data){
+          $.get("http://vierra.com.br/send", {subject:subject, text:text}, function(data){
           if(data=="sent"){
             alert("Mensagem enviada!");
             $(".name").val("");
