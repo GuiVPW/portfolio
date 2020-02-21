@@ -318,6 +318,6 @@ Javascript Function for Format, Validate and Submit the Contact Form
 });
 
 //initialize owl-carrousel in photos sections
-$(document).ready(function(){
+$(window).on('load',function() { 
   $(".owl-carousel").owlCarousel();
 });
