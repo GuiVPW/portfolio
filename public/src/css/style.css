@@ -238,6 +238,7 @@ ul {
 
 .owl-carousel{
 	z-index: 0;
+	width: auto;
 }
 /* .owl-item{
 	-webkit-backface-visibility: hidden;
