@@ -1,4 +1,4 @@
-$("#carousel").owlCarousel({
+$(".owl-carousel").owlCarousel({
     items: 5,
     lazyLoad: false, 
     rtl:true,
