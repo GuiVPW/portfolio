@@ -14,19 +14,19 @@ $("#carousel").owlCarousel({
     fluidspeed: 800,
     responsive: {
       0: {
-        items: 1
+        items: 6
       },
   
       600: {
-        items: 2
+        items: 6
       },
   
       1024: {
-        items: 2
+        items: 6
       },
   
       1366: {
-        items: 4
+        items: 6
       }
     }
   });
