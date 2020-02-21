@@ -1,4 +1,5 @@
 $("#carousel").owlCarousel({
+    items: 5,
     lazyLoad: false, 
     rtl:true,
     rewind: true,
