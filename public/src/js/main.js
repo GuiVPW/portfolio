@@ -1,16 +1,13 @@
 $(function(){
-  //restart the page to load all the photos faster
-  let load = 0;
-  if (load = 0){
-    location.reload();
-    load++;
-  }
-
-
   // Define Some Elements
   let allWindow = $(window),
   body = $('body'),
   top = allWindow.scrollTop();
+
+  //initialize owl-carrousel in photos sections
+  allWindow.on('load',function() { 
+    $(".owl-carousel").owlCarousel();
+  });
   
   /*-----------------------------------------------------
   Javascript Function To check Aniamtion support
@@ -317,7 +314,3 @@ Javascript Function for Format, Validate and Submit the Contact Form
       }
 });
 
-//initialize owl-carrousel in photos sections
-$(window).on('load',function() { 
-  $(".owl-carousel").owlCarousel();
-});
