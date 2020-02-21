@@ -233,15 +233,16 @@ ul {
 .photo img {
 	transition: transform .5s, filter 1s ease-in-out; 	
 	transform: scale(1);
+	width: auto;
 }
 
 .owl-carousel{
 	z-index: 0;
 }
-.owl-item{
+/* .owl-item{
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0) scale(1.0, 1.0);
-}
+} */
 /* Fim Photos */
 
 /* Works */
