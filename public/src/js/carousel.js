@@ -5,8 +5,6 @@ $("#carousel").owlCarousel({
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
     margin: 15,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     responsiveClass: true,
     autoHeight: true,
     autoWidth: true,
