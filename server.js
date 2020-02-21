@@ -14,7 +14,7 @@ router.get('/send',function(req,res){
         host: "smtp.gmail.com",
         auth: {
             user: "vierramessager@gmail.com",
-            pass: "s1e2n3d4e5r6"
+            pass: process.env.PASSWORD
         }
     });
     
