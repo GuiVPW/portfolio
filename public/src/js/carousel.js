@@ -9,7 +9,7 @@ $("#carousel").owlCarousel({
     animateIn: 'fadeIn',
     responsiveClass: true,
     autoHeight: true,
-    // autoWidth: true,
+    autoWidth: true,
     smartSpeed: 800,
     fluidspeed: 800,
     responsive: {
