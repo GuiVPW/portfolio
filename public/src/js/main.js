@@ -5,9 +5,9 @@ $(function(){
   top = allWindow.scrollTop();
 
   //initialize owl-carrousel in photos sections
-  allWindow.on('load',function() { 
-    $(".owl-carousel").owlCarousel();
-  });
+  // allWindow.on('load',function() { 
+  //   $(".owl-carousel").owlCarousel();
+  // });
   
   /*-----------------------------------------------------
   Javascript Function To check Aniamtion support

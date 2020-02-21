@@ -5,6 +5,7 @@ $(".owl-carousel").owlCarousel({
   autoplay: true,
   nav: true,
   dots: true,
+  autoHeight: true,
   autoplayTimeout: 1500,
   autoplayHoverPause: true
     // items: 5,
