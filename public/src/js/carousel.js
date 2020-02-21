@@ -1,16 +1,14 @@
 $("#carousel").owlCarousel({
     lazyLoad: false, 
     rtl:true,
-    autoplay: true,
     rewind: true,
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
-    margin: 15, 
+    margin: 15,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     responsiveClass: true,
     autoHeight: true,
-    autoWidth: true,
     smartSpeed: 800,
     fluidspeed: 800,
     responsive: {
