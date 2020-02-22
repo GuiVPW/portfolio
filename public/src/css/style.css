@@ -242,6 +242,10 @@ ul {
 	float: left !important;
 }
 
+.owl-loaded {
+	display: block !important;
+}
+
 .owl-carousel .owl-item img {
 	-webkit-transform-style: flat;
 	-moz-transform-style: flat;
