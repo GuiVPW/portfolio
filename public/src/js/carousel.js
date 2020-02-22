@@ -1,7 +1,6 @@
 $("#carousel").owlCarousel({
     lazyLoad: false, 
     rtl:true,
-    rewind: true,
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
     margin: 10,

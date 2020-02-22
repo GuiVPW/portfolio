@@ -243,6 +243,10 @@ ul {
 .owl-loaded {
 	display: block !important;
 }
+
+.owl-stage {
+	display: flex;
+}
   
 /* .owl-item{
 	-webkit-backface-visibility: hidden;
