@@ -12,15 +12,15 @@ $("#carousel").owlCarousel({
     fluidspeed: 800,
     responsive: {
       0: {
-        items: 5
+        items: 1
       },
   
       600: {
-        items: 5
+        items: 2
       },
   
       1024: {
-        items: 5
+        items: 3
       },
   
       1366: {
