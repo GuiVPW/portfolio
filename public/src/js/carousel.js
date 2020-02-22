@@ -4,7 +4,7 @@ $("#carousel").owlCarousel({
     rewind: true,
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
-    margin: 15,
+    margin: 10,
     responsiveClass: true,
     autoHeight: true,
     autoWidth: true,
@@ -12,7 +12,7 @@ $("#carousel").owlCarousel({
     fluidspeed: 800,
     responsive: {
       0: {
-        items: 1
+        items: 3
       },
   
       600: {
