@@ -510,6 +510,7 @@ ul {
     -moz-border-radius: 35px;
     border-radius: 35px;
 	display: none;
+	z-index: 999;
 }
 .scroll-up i {
     color: #fff;
@@ -524,7 +525,6 @@ ul {
 	transition: all 0.3s ease;
 	outline: none;
 	cursor: pointer;
-	z-index: 999;
 }
 .scroll-up:focus{
 	background: rgba(0, 0, 0, 0.9);
