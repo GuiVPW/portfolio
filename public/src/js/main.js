@@ -2,7 +2,7 @@ $(function(){
   // Define Some Elements
   let allWindow = $(window),
   body = $('body'),
-  top = allWindow.scrollTop(),
+  top = allWindow.scrollTop();
 
   allWindow.on('load',function() { 
     $('.owl-carousel').owlCarousel();
