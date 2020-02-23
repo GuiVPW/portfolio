@@ -13,7 +13,6 @@ $(function(){
   owl.owlCarousel({
     lazyLoad: true,
     touchDrag: false,
-    pullDrag: false,
     responsive: true,
     responsiveClass:true,
     animateIn: 'fadeIn',
