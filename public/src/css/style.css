@@ -238,15 +238,12 @@ ul {
 
 .owl-carousel{
 	width: auto;
+	display: inline-block !important;
 }
 
-.owl-loaded {
-	display: block !important;
-}
-
-.owl-stage {
+/* .owl-stage {
 	display: flex;
-}
+} */
   
 /* .owl-item{
 	-webkit-backface-visibility: hidden;
