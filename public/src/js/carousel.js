@@ -1,9 +1,9 @@
 $("#carousel").owlCarousel({
-    lazyLoad: false, 
+    lazyLoad: true, 
     rtl:true,
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
-    margin: 10,
+    margin: 20,
     autoHeight: true,
     autoWidth: true,
     smartSpeed: 800,
