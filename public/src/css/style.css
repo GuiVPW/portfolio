@@ -185,10 +185,12 @@ ul {
 
 .button {
 	padding: 10px;
-	background-color: #fff;
+	width: auto;
+	background-color: #fff !important;
 	color: #232323;
 	border: 1px solid rgba(0, 0, 0, 1);
 	transition: 1s ease-in-out;
+	text-decoration: none !important;
 }
 .button:hover {
 	background-color: rgba(0, 0, 0, 0.7);
