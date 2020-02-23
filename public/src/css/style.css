@@ -238,7 +238,7 @@ ul {
 
 .owl-carousel{
 	width: auto;
-	display: inline-block !important;
+	display: block !important;
 }
 
 /* .owl-stage {
