@@ -350,12 +350,20 @@
 	<script>
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
-			margin: 10,
-			loop: true,
+			lazyLoad: true, 
+			rtl:true,
+			autoplay: true,
 			autoplayTimeout: 6000,
 			autoplayHoverPause: true,
-			margin: 20,
-			responsiveClass: true,
+			responsive: true,
+			dots: true,
+			animateIn: true,
+			animateOut: true,
+			margin: 30,
+			autoHeight: true,
+			autoWidth: true,
+			smartSpeed: 800,
+			fluidspeed: 800,
 			responsive: {
 			0: {
 			  items: 1
