@@ -183,12 +183,6 @@ ul {
 	box-shadow: 0 0 6px #888;
 }
 
-.curriculum {
-	text-justify: distribute;
-	color: rgba(255,255,255,1);
-	text-decoration: none !important;
-}
-
 .informations {
 	font-size: 9px;	
 }
