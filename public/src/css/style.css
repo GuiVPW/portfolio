@@ -183,6 +183,19 @@ ul {
 	box-shadow: 0 0 6px #888;
 }
 
+.button {
+	padding: 10px;
+	background-color: #fff;
+	color: #232323;
+	border: 1px solid rgba(0, 0, 0, 1);
+	transition: 1s ease-in-out;
+}
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgba(255,255,255,1);
+	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+
 .informations {
 	font-size: 9px;	
 }
