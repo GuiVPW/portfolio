@@ -4,11 +4,11 @@ $("#carousel").owlCarousel({
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
     margin: 20,
-    autoHeight: true,
-    autoWidth: true,
+    // autoHeight: true,
+    // autoWidth: true,
     smartSpeed: 800,
-    fluidspeed: 800
-    loop: true,
+    fluidspeed: 800,
+    autoplaySpeed: 800,
     responsive: {
       0: {
         items: 1

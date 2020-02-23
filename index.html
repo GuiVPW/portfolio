@@ -142,12 +142,32 @@
 		<div class="section-title">
 			<h2>Fotos</h2>
 		</div>
-		<div class="owl-carousel" id="carousel">
+		<!-- <div class="owl-carousel" id="carousel">
 			<div class="photo item"><img src="./images/gui5.jpg" alt="foto 5"></div>
 			<div class="photo item"><img src="./images/gui4.jpg" alt="foto 4"></div>
 			<div class="photo item"><img src="./images/gui3.jpg" alt="foto 3️"></div>
 			<div class="photo item"><img src="./images/gui2.jpg" alt="foto 2"></div>
 			<div class="photo item"><img src="./images/gui1.jpg" alt="foto 1"></div>
+		</div> -->
+		<div class="owl-carousel owl-theme owl-loaded" id="carousel">
+			<div class="owl-stage-outer">
+				<div class="owl-stage">
+					<div class="photo owl-item"><img src="./images/gui5.jpg" alt="foto 5"></div>
+					<div class="photo owl-item"><img src="./images/gui4.jpg" alt="foto 4"></div>
+					<div class="photo owl-item"><img src="./images/gui3.jpg" alt="foto 3️"></div>
+					<div class="photo owl-item"><img src="./images/gui2.jpg" alt="foto 2"></div>
+					<div class="photo owl-item"><img src="./images/gui1.jpg" alt="foto 1"></div>
+				</div>
+			</div>
+			<div class="owl-nav">
+				<div class="owl-prev">prev</div>
+				<div class="owl-next">next</div>
+			</div>
+			<div class="owl-dots">
+				<div class="owl-dot active"><span></span></div>
+				<div class="owl-dot"><span></span></div>
+				<div class="owl-dot"><span></span></div>
+			</div>
 		</div>
 
 	</section>
@@ -351,7 +371,7 @@
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
 			lazyLoad: true, 
-			// rtl:true,
+			rtl:true,
 			autoplay: true,
 			autoplayTimeout: 6000,
 			autoplayHoverPause: true,
@@ -361,9 +381,11 @@
 			animateOut: true,
 			margin: 30,
 			// autoHeight: true,
-			autoWidth: true,
+			// autoWidth: true,
 			smartSpeed: 1000,
 			fluidspeed: 800,
+			autoplaySpeed: 800,
+
 			responsive: {
 			0: {
 			  items: 1
