@@ -11,8 +11,7 @@ $(function(){
   });
   
   owl.owlCarousel({
-    lazyLoad: true, 
-    rtl:true,
+    lazyLoad: true,
     touchDrag: false,
     pullDrag: false,
     responsive: true,
@@ -22,7 +21,6 @@ $(function(){
     margin: 30,
     smartSpeed: 1000,
     fluidspeed: 800,
-  
     responsive: {
       0: {
         items: 1
