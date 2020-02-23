@@ -2,11 +2,38 @@ $(function(){
   // Define Some Elements
   let allWindow = $(window),
   body = $('body'),
-  top = allWindow.scrollTop();
-
+  top = allWindow.scrollTop(),
+  owl = $('.owl-carousel');
+  
   //initialize owl-carrousel in photos sections
   allWindow.on('load',function() { 
-    $(".owl-carousel").owlCarousel();
+    owl.owlCarousel();
+  });
+  
+  owl.owlCarousel({
+    lazyLoad: true, 
+    rtl:true,
+    touchDrag: false,
+    pullDrag: false,
+    responsive: true,
+    responsiveClass:true,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    margin: 30,
+    smartSpeed: 1000,
+    fluidspeed: 800,
+  
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
   });
   
   /*-----------------------------------------------------
