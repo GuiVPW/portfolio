@@ -1,16 +1,18 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-const router = express.Router();
-const nodemailer = require("nodemailer");
-let http = require('http');
-if (req.headers["x-forwarded-proto"] == "http") //Checa se o protocolo informado nos headers é HTTP 
-        res.redirect(`https://${req.headers.host}${req.url}`); //Redireciona pra HTTPS 
-else //Se a requisição já é HTTPS 
-    next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado 
+const express = require('express'),
+app = express();
+path = require('path');
+router = express.Router();
+nodemailer = require("nodemailer");
+let http = require('http'),
+io = require('socket.io'),
+fs = require('fs')
 
 router.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/index.html'));
+    if (req.headers["x-forwarded-proto"] == "http")
+            res.redirect(`https://${req.headers.host}${req.url}`);
+    else
+        res.sendFile(path.join(__dirname+'/index.html'));
+        next()
 });
 router.get('/send',function(req,res){
     let smtpTransport = nodemailer.createTransport({
@@ -40,5 +42,6 @@ router.get('/send',function(req,res){
 app.use('/', router);
 app.use(express.static(path.join(__dirname, 'public/src')));
 const server = http.createServer(app);
-server.listen(3000);
+server.listen(3000)
+io = io.listen(server);
 
