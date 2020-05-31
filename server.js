@@ -4,6 +4,10 @@ const path = require('path');
 const router = express.Router();
 const nodemailer = require("nodemailer");
 let http = require('http');
+if (req.headers["x-forwarded-proto"] == "http") //Checa se o protocolo informado nos headers é HTTP 
+        res.redirect(`https://${req.headers.host}${req.url}`); //Redireciona pra HTTPS 
+else //Se a requisição já é HTTPS 
+    next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado 
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/index.html'));
@@ -18,19 +22,19 @@ router.get('/send',function(req,res){
         }
     });
     
-        let mailOptions={
-            to : "guivpw68@gmail.com",
-            subject : req.query.subject,
-            text : req.query.text
-         }
+    let mailOptions={
+        to : "guivpw68@gmail.com",
+        subject : req.query.subject,
+        text : req.query.text
+    }
 
-        smtpTransport.sendMail(mailOptions, function(error, response){
-                if(error){
-                    res.end("error");
-                }else{
-                    res.end("sent");
-                }
-        });
+    smtpTransport.sendMail(mailOptions, function(error, response){
+        if(error){
+            res.end("error");
+        }else{
+            res.end("sent");
+        }
+    });
 });
 
 app.use('/', router);
