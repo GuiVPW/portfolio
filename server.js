@@ -2,17 +2,15 @@ const express = require('express'),
 app = express();
 path = require('path');
 router = express.Router();
-nodemailer = require("nodemailer");
-let http = require('http'),
-io = require('socket.io'),
-fs = require('fs')
+nodemailer = require("nodemailer"),
+io = require('socket.io');
+let http = require('http')
 
 router.get('/',function(req,res){
     if (req.headers["x-forwarded-proto"] == "http")
-            res.redirect(`https://${req.headers.host}${req.url}`);
+        res.redirect(`https://${req.headers.host}${req.url}`);
     else
         res.sendFile(path.join(__dirname+'/index.html'));
-        next()
 });
 router.get('/send',function(req,res){
     let smtpTransport = nodemailer.createTransport({
